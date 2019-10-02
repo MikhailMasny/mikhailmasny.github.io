@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    color: #333;
+    font-size: 1.6rem;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: .008em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.wrapper {
+    width: 50%;
+    max-width: 60rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+@media (max-width:767px) {
+    .wrapper {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width:544px) {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end
+    }
+
+    .wrapper-col:last-child:not(:first-child) {
+        text-align: right
+    }
+}
+
+a {
+    color: #333
+}
+
+h1 {
+    color: #111;
+    line-height: 0.9;
+    font-weight: 900
+}
+
+.about-myself {
+    font-size: 50px;
+    font-size: 8vw;
+    font-family: Lato, 'Open Sans', Helvetica, Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    display: inline-block
+}
+
+@media (max-width:525px) {
+    .about-myself {
+        font-size: 42px
+    }
+}
+
+@media (min-width:937.5px) {
+    .about-myself {
+        font-size: 75px
+    }
+}
+
+.person {
+    text-shadow: 4px 4px 0 #FF8000;
+    transition: text-shadow .2s ease-in-out
+}
+
+a:hover .person {
+    text-shadow: -4px -4px 0 #C8A2C8
+}
+
+.profession {
+    font-size: .34em;
+    letter-spacing: .16em;
+    font-weight: 400;
+    text-transform: none;
+    display: block;
+    margin-top: 1.2rem;
+    padding-top: 1.6rem;
+    border-top: .45em solid
+}
+
+.contact-link {
+    text-decoration: none;
+    position: relative;
+    display: inline-block
+}
+
+.contact-link:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: .2em;
+    width: 100%;
+    height: 2px;
+    background-color: #96ddcf
+}
+
+.contact-link:visited:before {
+    background-color: #ddd
+}
+
+.contact-link:hover:before {
+    background-color: #fa8072
+}
