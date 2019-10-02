@@ -86,7 +86,7 @@ h1 {
 }
 
 .person {
-    text-shadow: 4px 4px 0 #FF8000;
+    text-shadow: 4px 4px 0 #F5992F;
     transition: text-shadow .2s ease-in-out
 }
 
@@ -96,13 +96,12 @@ a:hover .person {
 
 .profession {
     font-size: .34em;
-    letter-spacing: .16em;
     font-weight: 400;
     text-transform: none;
     display: block;
     margin-top: 1.2rem;
     padding-top: 1.6rem;
-    border-top: .45em solid
+    border-top: .40em solid
 }
 
 .contact-link {
@@ -118,7 +117,7 @@ a:hover .person {
     bottom: .2em;
     width: 100%;
     height: 2px;
-    background-color: #96ddcf
+    background-color: #F5992F
 }
 
 .contact-link:visited:before {
@@ -126,5 +125,5 @@ a:hover .person {
 }
 
 .contact-link:hover:before {
-    background-color: #fa8072
+    background-color: #F5992F
 }
