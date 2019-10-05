@@ -22,11 +22,12 @@ body {
     letter-spacing: .008em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-image: url("images/background.jpg"); /*Photo by Essentialiving on Unsplash*/
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url("images/background.jpg") no-repeat center center fixed; /*Photo by Essentialiving on Unsplash*/
+    
+    -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
 }
 
 .wrapper {
