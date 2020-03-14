@@ -1,0 +1,54 @@
+@media screen and (max-width: 580px) {
+    .main {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-myself {
+        margin: auto;
+        width: 240px;
+    }
+    
+    .about-myself__fullname {
+        padding-bottom: 10px;
+        border-bottom: 4px solid;
+    }
+
+    .about-myself__fullname-upper {
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 46px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .about-myself__profession {
+        padding-top: 4px;
+    }
+
+    .about-myself__profession {
+        text-align: center;
+    }
+    
+    .about-myself__profession-title {
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: none;
+    }
+
+    .contact {
+        width: 240px;
+        margin: auto;
+        padding-top: 20px;
+        text-align: center;
+        display: block;
+        align-items: center;
+    }
+
+    .contact__list {
+        margin: auto;
+    }
+}
