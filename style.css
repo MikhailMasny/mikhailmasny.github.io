@@ -1,150 +1,87 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-html {
-    font-size: 62.5%;
+* {
     box-sizing: border-box;
 }
 
-body {
+h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
-    background-color: #fff;
-    color: #333;
-    font-size: 1.6rem;
-    font-family: Lato, Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    line-height: 1.5;
-    letter-spacing: .008em;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
 }
 
-.wrapper {
-    width: 50%;
-    max-width: 60rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+html {
+    height: 100%;
+    display: flex;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: auto;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.main {
+    width: 564px;
+    padding: 20px;
     background-color: rgba(255, 255, 255, 0.7);
-    padding: 20px 20px 20px 20px;
-}
-
-@media (max-width:767px) {
-    .wrapper {
-        width: 75%;
-        text-align: center;
-    }
-}
-
-@media (min-width:620px) {
-    .wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end
-    }
-
-    .wrapper-col:last-child:not(:first-child) {
-        text-align: right
-    }
-}
-
-a {
-    color: #333
-}
-
-h1 {
-    color: #111;
-    line-height: 0.9;
-    font-weight: 900
+    display: flex;
+    justify-content: space-between;
 }
 
 .about-myself {
-    font-size: 50px;
-    font-size: 8vw;
-    font-family: Lato, 'Open Sans', Helvetica, Arial;
-    margin-top: 0;
-    margin-bottom: 0;
+    width: 340px;
+}
+
+.about-myself__fullname {
+    padding-bottom: 12px;
+    border-bottom: 8px solid;
+}
+
+.about-myself__fullname-upper {
+    font-weight: 900;
+    font-size: 75px;
+    line-height: 65px;
     text-transform: uppercase;
-    display: inline-block
+    letter-spacing: 1px;
+
 }
 
-@media (max-width:525px) {
-    .about-myself {
-        font-size: 42px
-    }
-}
-
-@media (min-width:937.5px) {
-    .about-myself {
-        font-size: 75px
-    }
-}
-
-.person {
+.about-myself__fullname-shadow {
     text-shadow: 4px 4px 0 #F5992F;
-    transition: text-shadow .2s ease-in-out
+    transition: text-shadow .2s ease-in-out;
 }
 
-a:hover .person {
-    text-shadow: -4px -4px 0 #C8A2C8
+.about-myself__fullname-shadow:hover {
+    text-shadow: -4px -4px 0 #C8A2C8;
 }
 
-.profession {
-    font-size: .34em;
+.about-myself__profession {
+    padding-top: 6px;
+}
+
+.about-myself__profession-title {
+    font-size: 24px;
     font-weight: 400;
     text-transform: none;
-    display: block;
-    margin-top: 1.2rem;
-    padding-top: 1.6rem;
-    border-top: .40em solid
 }
 
-.contact-link {
+.contact {
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.contact__item {
+    padding-top: 5px;
+    color: #333333;
+}
+
+.link {
+    color: #000000;
     text-decoration: none;
-    position: relative;
-    display: inline-block
+    border-bottom: 2px solid #dddddd;
 }
 
-.contact-link:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    bottom: .2em;
-    width: 100%;
-    height: 2px;
-    background-color: #F5992F
-}
-
-.contact-link:visited:before {
-    background-color: #ddd
-}
-
-.contact-link:hover:before {
-    background-color: #F5992F
-}
-
-#background {
-    position: fixed;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-}
-
-#background img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    min-width: 50%;
-    min-height: 50%;
+.link:hover {
+    border-bottom: 2px solid #f5992f;
 }

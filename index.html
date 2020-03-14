@@ -1,11 +1,13 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mikhail Masny | Curriculum Vitae</title>
     <meta name="description" content="Mikhail Masny's personal page on GitHub.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
+
     <!-- favicon for all type of devices -->
     <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
@@ -26,27 +28,26 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <div id="background">
-            <img src="images/background.jpg" alt="">
-    </div>
-    <div class="wrapper">
-        <div class="wrapper-col">
-            <a href="#" title="Welcome to my personal page! :)">
-                <h1 class="about-myself">
-                    <span class="person">Mikhail<br/>Masny</span>
-                    <span class="profession">Software Engineer</span>
-                </h1>
-            </a>
-        </div>
-        <div class="wrapper-col">
-            <div>
-                <a class="contact-link" href="https://github.com/MikhailMasny" target="_blank">GitHub</a>
+    <section class="main">
+        <div class="about-myself">
+            <div class="about-myself__fullname">
+                <h1 class="about-myself__fullname-upper about-myself__fullname-shadow">Mikhail Masny</h1>
             </div>
-            <div>
-                <a class="contact-link" href="https://www.linkedin.com/in/mikhail-masny/" target="_blank">LinkedIn</a>
+            <div class="about-myself__profession">
+                <span class="about-myself__profession-title">Software Engineer</span>
             </div>
-            <div>Minsk, Belarus</div>
         </div>
-    </div>  
+        <div class="contact">
+            <div class="contact__list">
+                <p class="contact__item">
+                    <a class="link" href="https://github.com/MikhailMasny" target="_blank">GitHub</a>
+                </p>
+                <p class="contact__item">
+                    <a class="link" href="https://www.linkedin.com/in/mikhail-masny/" target="_blank">LinkedIn</a>
+                </p>
+                <p class="contact__item">Minsk, Belarus</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
